@@ -5,12 +5,9 @@ Installation Steps
 ------------------
 
 1.  Edit network-scripts to get networking up
-
-`vi /etc/sysconfig/network-scripts/eth0`
-
-`ONBOOT=yes`
-
-`NM\_CONTROLLED=no`
+  `vi /etc/sysconfig/network-scripts/eth0`
+      `ONBOOT=yes`
+      `NM\_CONTROLLED=no`
 
 2.  `yum install man`
 3.  `yum install git`
