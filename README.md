@@ -6,15 +6,15 @@ Installation Steps
 
 1.  Edit network-scripts to get networking up
 
-vi /etc/sysconfig/network-scripts/eth0
+`vi /etc/sysconfig/network-scripts/eth0`
 
-ONBOOT=yes
+`ONBOOT=yes`
 
-NM\_CONTROLLED=no
+`NM\_CONTROLLED=no`
 
-2.  yum install man
-3.  yum install git
-4.  yum install python
+2.  `yum install man`
+3.  `yum install git`
+4.  `yum install python`
 
 This provides python 2.6.6. We need 2.7.6.
 
