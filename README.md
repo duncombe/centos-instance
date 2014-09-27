@@ -35,11 +35,11 @@ Trying again:
    - `vi /etc/sysconfig/network-scripts/ifcfg-eth0`  
    	> `ONBOOT=yes`  
    	> `NM_CONTROLLED=no`  
-   - `service network restart`
-    \# edit for broken DHCP server
-    \# `edit /etc/sysconfig/network-scripts/ifcfg-eth0`  
+   - \# edit for broken DHCP server
+		\# `edit /etc/sysconfig/network-scripts/ifcfg-eth0`  
 		\# `edit /etc/sysconfig/network`    
 		\# `edit /etc/resolv.conf`    
+	`service network restart`
 4.  `yum -y update`
 5.  `yum install wget`
 6.  `yum install man`
