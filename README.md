@@ -33,36 +33,32 @@ Trying again:
 
 3.  Edit network-scripts.
 
-- vi /etc/sysconfig/network-scripts/ifcfg-eth0
+   - `vi /etc/sysconfig/network-scripts/ifcfg-eth0`  
 
-- ONBOOT=yes
+   - `ONBOOT=yes`  
 
-- NM\_CONTROLLED=no
+   - `NM_CONTROLLED=no`  
 
-- service network restart
+   - `service network restart`
 
-# edit for broken DHCP server
+   \# edit for broken DHCP server
 
-# edit /etc/sysconfig/network-scripts/ifcfg-eth0
+   \# `edit /etc/sysconfig/network-scripts/ifcfg-eth0`
 
-        \# edit /etc/sysconfig/network
+        \# `edit /etc/sysconfig/network`
 
-        \# edit /etc/resolv.conf
+        \# `edit /etc/resolv.conf`
 
-4.  yum -y update
-5.  yum install wget
-6.  yum install man
-7.  yum install git
-8.  yum install vim
-9.  yum install ntp
-10. bash Anaconda...sh
-11. git clone compliance-checker
-12. git clone virtualenv-burrito
-13. Does not run. Email matt ASAP.
+4.  `yum -y update`
+5.  `yum install wget`
+6.  `yum install man`
+7.  `yum install git
+8.  `yum install vim
+9.  `yum install ntp
+10. `bash Anaconda...sh
 
-Does not have, and may need
----------------------------
-
--   Minimal version of vim installed, upgrade to more full-featured vim.
+11. `git clone compliance-checker
+12. `git clone virtualenv-burrito
+13.  compliance-checker does not run. What now?
 
 
