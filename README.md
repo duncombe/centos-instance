@@ -6,44 +6,44 @@ Installation Steps
 
 1.  Edit network-scripts to get networking up
   
-  > `vi /etc/sysconfig/network-scripts/eth0`
-  > > `ONBOOT=yes`
-
-  > >  `NM_CONTROLLED=no`
+  `vi /etc/sysconfig/network-scripts/eth0`  
+     `ONBOOT=yes`  
+     `NM_CONTROLLED=no`  
 
 2.  `yum install man`
 3.  `yum install git`
-4.  `yum install python`
+4.  `yum install python` 
+   This provides python 2.6.6. We need 2.7.6.  
 
-This provides python 2.6.6. We need 2.7.6.
-
-5.  useradd duncombe
-6.  yum -y update
+5.  `useradd $USER`
+6.  `yum -y update`
 7.  test if pip works
 8.  STOP! Restart!
+
+
+Trying again:
 
 1.  Start a VM, install minimal CentOS.
 2.  Add a user
 
-adduser duncombe
+   `adduser duncombe`  
+   `passwd duncombe`  
 
-passwd duncombe
-
-visudo
+   `visudo`  
 
 3.  Edit network-scripts.
 
-vi /etc/sysconfig/network-scripts/ifcfg-eth0
+- vi /etc/sysconfig/network-scripts/ifcfg-eth0
 
-ONBOOT=yes
+- ONBOOT=yes
 
-NM\_CONTROLLED=no
+- NM\_CONTROLLED=no
 
-service network restart
+- service network restart
 
-\# edit for broken DHCP server
+# edit for broken DHCP server
 
-\# edit /etc/sysconfig/network-scripts/ifcfg-eth0
+# edit /etc/sysconfig/network-scripts/ifcfg-eth0
 
         \# edit /etc/sysconfig/network
 
