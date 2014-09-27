@@ -9,7 +9,7 @@ Installation Steps
   > `vi /etc/sysconfig/network-scripts/eth0`
   > > `ONBOOT=yes`
 
-  > >  `NM\_CONTROLLED=no`
+  > >  `NM_CONTROLLED=no`
 
 2.  `yum install man`
 3.  `yum install git`
