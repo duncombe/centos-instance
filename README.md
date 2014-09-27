@@ -35,9 +35,9 @@ Trying again:
 
    - `vi /etc/sysconfig/network-scripts/ifcfg-eth0`  
 
-   - `ONBOOT=yes`  
+   `ONBOOT=yes`  
 
-   - `NM_CONTROLLED=no`  
+   `NM_CONTROLLED=no`  
 
    - `service network restart`
 
@@ -52,13 +52,14 @@ Trying again:
 4.  `yum -y update`
 5.  `yum install wget`
 6.  `yum install man`
-7.  `yum install git
-8.  `yum install vim
-9.  `yum install ntp
-10. `bash Anaconda...sh
+7.  `yum install git`
+8.  `yum install vim`
+9.  `yum install ntp`  
+   `service ntpd start`
+10. `bash Anaconda...sh`
 
-11. `git clone compliance-checker
-12. `git clone virtualenv-burrito
+11. `git clone compliance-checker`
+12. `git clone virtualenv-burrito`
 13.  compliance-checker does not run. What now?
 
 
