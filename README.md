@@ -45,9 +45,9 @@ Trying again:
 
    \# `edit /etc/sysconfig/network-scripts/ifcfg-eth0`
 
-        \# `edit /etc/sysconfig/network`
+        \# `edit /etc/sysconfig/network`  
 
-        \# `edit /etc/resolv.conf`
+        \# `edit /etc/resolv.conf`  
 
 4.  `yum -y update`
 5.  `yum install wget`
