@@ -44,10 +44,12 @@ which will modify your path. You'll have the old version of git in /usr/bin/git,
 
 You also get newer g++ (4.8), etc.
 
-        ```
+      ```
+        
 	- `yum install vim`  
 	- `yum install ntp`   
    		`service ntpd start`  
+
 10. Get the anaconda install script, where? then
 	- `bash Anaconda...sh`  
 
