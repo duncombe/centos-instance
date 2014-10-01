@@ -33,7 +33,7 @@ Installation Steps
 	- `yum install git`  
 	   We want git >1.7.11; CentOS only installs 1.7.1 (or something). So [try this                     page](http://tecadmin.net/install-git-1-9-on-centos-rhel/). 
 Also look at the last post [in this thread](http://serverfault.com/questions/448814/yum-doesnt-install-latest-version-of-git-on-centos6)
-```
+       ```
 CentOS supports a "parallel" universe of newer compilers and tools, that doesn't clobber the older versions. You want
 
 yum install devtoolset-2
@@ -44,7 +44,7 @@ which will modify your path. You'll have the old version of git in /usr/bin/git,
 
 You also get newer g++ (4.8), etc.
 
-```
+        ```
 	- `yum install vim`  
 	- `yum install ntp`   
    		`service ntpd start`  
