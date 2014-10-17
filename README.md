@@ -78,6 +78,10 @@ For AWS instance provided:
 	`wget  http://09c8d0b2229f813c1b93-c95ac804525aac4b6dba79b00b39d1d3.r79.cf1.rackcdn.com/Anaconda-2.1.0-Linux-x86_64.sh`    
 	then
 	- `bash Anaconda...sh`  
+5. Get Hugo (for documentation).
+	- download from github
+	`wget https://github.com/spf13/hugo/releases/download/v0.12/hugo_0.12_linux_amd64.tar.gz`
+
 
 11. `git clone compliance-checker`  
 12. `git clone virtualenv-burrito`  
