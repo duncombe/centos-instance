@@ -63,12 +63,12 @@ For AWS instance provided:
 
 1.  Putty in with key and passphrase. Set putty to send keep-alive pings.
 2.  We do need
-	- `ssh-keygen` # then put the key on github
-	- `git clone dotfiles`  # and adjust the bashrc, and other dotfiles
+	- `ssh-keygen` \# then put the key on github
+	- `git clone dotfiles`  \# and adjust the bashrc, and other dotfiles
 	- 
 2.  We do not need:   
-  	- `yum -y update`  # we don't get to do this, no privilege
-	- `yum install wget`  # already installed
+  	- `yum -y update`  \# we don't get to do this, no privilege
+	- `yum install wget`  \# already installed
 	- `yum install man`   # already installed
 	- `yum install git`   # already installed  (v. 1.7.1, need >1.7.11. See also above comments for VBox.)
 	- `yum install vim`   # already installed (v. 7.2)
