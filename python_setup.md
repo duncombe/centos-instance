@@ -11,6 +11,6 @@ conda config --add channels https://conda.binstar.org/rsignell
 conda config --add channels https://conda.binstar.org/Unidata
 
 conda create -n workshop python=2 numpy matplotlib cartopy ipython ipython-notebook \
-netcdf4 owslib pyudl networkx basemap
+    netcdf4 owslib pyudl networkx basemap
 
 ```
