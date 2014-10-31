@@ -37,8 +37,8 @@ conda update anaconda
 	
 5. See [here](python_setup.md) for setting up the python environment.
 
-5. Get Hugo (for sos-guidelines documentation).
-	- download from github    
+5. Get Hugo (for sos-guidelines documentation).    
+	- download from github     
 	`wget https://github.com/spf13/hugo/releases/download/v0.12/hugo_0.12_linux_amd64.tar.gz`
 
 
