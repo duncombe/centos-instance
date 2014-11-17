@@ -42,5 +42,8 @@ conda update anaconda
 		`wget https://github.com/spf13/hugo/releases/download/v0.12/hugo_0.12_linux_amd64.tar.gz`
 
 11. `git clone compliance-checker`  
-12. `git clone virtualenv-burrito`  
-13.  compliance-checker does not run. What now?
+12. Set up an environment. The IOOS site recommends
+	12. `git clone virtualenv-burrito`  
+	13.  but compliance-checker does not run. What now?
+	14.  Well, NOW we use anaconda and follow some instructions in  the Unidata python workshop examples. Also have a look at Rich Signell's [tiddly spot blog](http://rsignell.tiddlyspot.com/#[[Creating%20a%20custom%20Conda%20environment%20on%20Wakari%20Enterprise]]) for hints.
+14.  
