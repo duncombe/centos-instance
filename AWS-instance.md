@@ -30,10 +30,10 @@
 	Can choose to have it change your path or you will have to change it yourself by prepending `PATH=~/anaconda/bin` 
 	to PATH in one of `.bashrc` or `.bashrc_custom`, wherever is appropriate.     
 		- Already have anaconda installed and want to upgrade to latest version?      
-```
-	conda update conda    
-	conda update anaconda    
-```       
+		```
+		conda update conda    
+		conda update anaconda    
+		```       
 5. See [here](python_setup.md) for setting up the python environment.    
     
 5. Get Hugo (for sos-guidelines documentation).     
