@@ -17,7 +17,7 @@ conda create -n workshop python=2 numpy matplotlib cartopy ipython ipython-noteb
 
 For compliance checker:
 
-conda install -f requirements.txt
+`conda install -f requirements.txt`
 
 
 Tried this
@@ -49,12 +49,12 @@ so clearly something was done to get the correct response. A test should be done
 
 1. Constructed from an email exchange with Rich Signell   
     2.  Rich Signell made us an account for Wakari Enterprise on a machine and pointed us to information for creating the custom environment needed for running system test or other IOOS stuff at [http://goo.gl/vsZn7x](http://goo.gl/vsZn7x).
-    2.  I found that as the instructions were written the system would not let me complete the install step at `conda install iris, pyoos netcdf4`, complaining about permissions on the `/opt/wakari/anaconda` directory. To get past that I had to specify the path to the environment with the -p option, so: `conda install -p /projects/rsignell/test/envs/my_root iris, pyoos netcdf4`. 
-    2. I thne had a further confusing experience with Wakari on the testbed machine: I had a project working over the weekend, it was compiling and running its notebook and doing some things. I shut it down, pushed my commits to github, and went away and came back to do some more things with it, and it had stopped working. The message was "Warning, notebook server is running IPython version, 2.0.0-dev, The kernel (directory of project)/bin/python is running a different version."  I startted from scratch and reinstalled and recreated everything. 
-    2. Then it did it again. I shut down the project I was working on, left it alone overnight and came back in the morning to start it up again and got the same message. Current status: continuum support is working on the problem.    
+    2.  I found that as the instructions were written the system would not let me complete the install step at `conda install iris, pyoos netcdf4`, complaining about permissions on the `/opt/wakari/anaconda` directory. To get past that I had to specify the path to the environment with the -p option, so: `conda install -p /projects/rsignell/test/envs/my_root iris, pyoos netcdf4`. An alternate is to create and activate the environment first then do the install step, and the 
+    2. I then had a further confusing experience with Wakari on the testbed machine: I had a project working over the weekend, it was compiling and running its notebook and doing some things. I shut it down, pushed my commits to github, and went away and came back to do some more things with it, and it had stopped working. The message was "Warning, notebook server is running IPython version, 2.0.0-dev, The kernel (directory of project)/bin/python is running a different version."  I started from scratch and reinstalled and recreated everything. 
+    2. Then it did it again. I shut down the project I was working on, left it alone overnight and came back in the morning to start it up again and got the same message. Current status: Continuum support is working on the problem.    
 1.  I now have an AWS VM available and moved operations over there.
-    2.  Following the same kind of environment creation steps as Rich outlined, I got the IPython notebook working. But now it would not read or recognise a netCDF file. 
-    2.  Backing out I went back to the Unidata python workshop exsamples and worked with their test-data. Behold! Some of them worked (were able to be read), but files fetched from the thredds server at IOOS were broken and not recognised as netCDF. Went back to the original workshop environemnt and, again, Behold! It works. So something in the environment created with Rich''s steps is messing with the system. So far ... 
+    2.  Following the same kind of environment creation steps as Rich outlined, I got the IPython notebook working. But here it would not read or recognise any netCDF file. 
+    2.  Backing out, I went back to the Unidata python workshop examples and worked with their test-data. Behold! Some of them worked (were able to be read), but files fetched from the THREDDS server at IOOS were broken and not recognised as netCDF. Went back to the original workshop environment and, again, Behold! It works. So something in the environment created with Rich's steps is messing with the system or missing. So far ... 
     3.  Further updates as events warrant.
 
 
