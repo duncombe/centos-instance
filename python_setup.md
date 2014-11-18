@@ -54,8 +54,8 @@ so clearly something was done to get the correct response. A test should be done
     2. Then it did it again. I shut down the project I was working on, left it alone overnight and came back in the morning to start it up again and got the same message. Current status: Continuum support is working on the problem.    
 1.  I now have an AWS VM available and moved operations over there.
     2.  Following the same kind of environment creation steps as Rich outlined, I got the IPython notebook working. But here it would not read or recognise any netCDF file. 
-    2.  Backing out, I went back to the Unidata python workshop examples and worked with their test-data. Behold! Some of them worked (were able to be read), but files fetched from the THREDDS server at IOOS were broken and not recognised as netCDF. Went back to the original workshop environment and, again, Behold! It works. So something in the environment created with Rich's steps is messing with the system or missing. So far ... 
-    3.  Further updates as events warrant.
+    2.  Backing out, I went back to the Unidata python workshop examples and worked with their test-data. Behold! Some of them worked (were able to be read), but files fetched from the THREDDS server at IOOS were broken and not recognised as netCDF. Went back to the original workshop environment and, again, Behold! It works. So something in the environment created with Rich's steps is messing with the system or missing. So far ...   
+1.  Further updates as events warrant.
 
 
 
