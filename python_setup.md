@@ -59,18 +59,20 @@ so clearly something was done to get the correct response. A test should be done
     2.  Backing out, I went back to the Unidata python workshop examples and worked with their test-data. Behold! Some of them worked (were able to be read), but files fetched from one of the THREDDS servers pointed to by IOOS were broken and not recognised as netCDF. Went back to the original workshop environment and, again, Behold! It works. So something in the environment created with Rich's steps is messing with the system or missing. So far ...   
 1.  An email from Jeremy Langley, support at Continuum, provides a lot of enlightenment: 
 
-> This error is caused by upgrading Ipython.  We need to know how ipython was upgraded in order to help you better.
->
-> If you ran the lines from this page:
-> [http://rsignell.tiddlyspot.com/#[[Creating%20a%20custom%20Conda%20environment%20on%20Wakari%20Enterprise]]]
-> 
-> There is a line:    
-> `conda config --add channels https://conda.binstar.org/rsignell`    
-> It points to another install of ipython that doesn't work with your version of Wakari.  (despite the version numbers, which caused considerable debate here.)
-> 
-> The way to install wakari to an environment is running:    
-> `conda install -c wakari ipython-we=2.0.0.1`    
-> 
+    > This error is caused by upgrading Ipython.  We need to know how ipython was upgraded in order to help you better.
+    >
+    > If you ran the lines from this page:
+    > [http://rsignell.tiddlyspot.com/#[[Creating%20a%20custom%20Conda%20environment%20on%20Wakari%20Enterprise]]]
+    > 
+    > There is a line:    
+    > `conda config --add channels https://conda.binstar.org/rsignell`    
+    > It points to another install of ipython that doesn't work with your version of Wakari.  (despite the version numbers, which caused considerable debate here.)
+    > 
+    > The way to install wakari to an environment is running:    
+    > `conda install -c wakari ipython-we=2.0.0.1`    
+    > 
+   
 
+<!-- vim: se nowrap tw=0 : -->
 
 
