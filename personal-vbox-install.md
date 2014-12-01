@@ -1,7 +1,7 @@
 
-# Installation of a system on personal Virtualbox instance
+# Installation of a system on personal VirtualBox instance
 
-Should investigate vagrant for controlling vbox.
+Should investigate `vagrant` for controlling VirtualBox.
 
 ## Installation Steps
 
