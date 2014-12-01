@@ -16,7 +16,7 @@
   	- `yum -y update`  \# we don't get to do this, no sudo access
 	- `yum install wget`  \# already installed
 	- `yum install man`   # already installed
-	- `yum install git`   # already installed  (v. 1.7.1, need >1.7.11. See also above comments for VBox.)
+	- `yum install git`   # already installed  (v. 1.7.1, need > 1.7.11. Also see [the document for running on Oracle VirtualBox](personal-vbox-install.md).)
 	- `yum install vim`   # already installed (v. 7.2)
 	- `yum install ntp`   # already installed but stopped. Now started by sysadmin, thanks!
 4. See [http://docs.continuum.io/anaconda/install.html](http://docs.continuum.io/anaconda/install.html) for installation 
