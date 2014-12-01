@@ -3,10 +3,16 @@
 
 Provides some notes on installing, accessing and using the NODC Amazon Web Service VM. 
 
+Please pay attention to this next point. At some places below is mentioned to clone a repository from github.com/duncombe:
+- READ AND UNDERSTAND CAREFULLY ALL SOFTWARE BEFORE YOU INSTALL AND RUN IT.    
+  What works for me MAY NOT work for you. I use a lot of custom scripts, functions and aliases that suit my programming style and workflow. These may not work for you and may break the setup you are trying to create. Hints from the name about what a software does may not be 100% accurate. Some functions and scripts may have unexpected side effects. 
+
 ###Housekeeping    
 	Downloads live in ~/software.    
 
-### For AWS instance provided:
+### For AWS instance provided: 
+
+More hints and tips are available in the document on [running a personal VM on Oracle VirtualBox](personal-vbox-install.md).
 
 2. User provides sysadmin with public key and keeps private key and passphrase.
 1. Sysadmin provides IP of instance. 
@@ -21,6 +27,7 @@ Provides some notes on installing, accessing and using the NODC Amazon Web Servi
 	- `yum install git`   # already installed  (v. 1.7.1, need > 1.7.11. Also see [the document for running on Oracle VirtualBox](personal-vbox-install.md).)
 	- `yum install vim`   # already installed (v. 7.2)
 	- `yum install ntp`   # already installed but stopped. Now started by sysadmin, thanks!
+3.  May need to have sysadmin enable access to `cron`, `at` and `batch`, which currently are not permitted to run. Not right now a huge issue, but you may need these when the time comes to test databases and servers.
 4. See [http://docs.continuum.io/anaconda/install.html](http://docs.continuum.io/anaconda/install.html) for installation 
 	of anaconda:
 	1.	Get the anaconda install script    
