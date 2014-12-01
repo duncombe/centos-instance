@@ -1,10 +1,12 @@
 
 # Using AWS Instance Provided
 
+Provides some notes on installing, accessing and using the NODC Amazon Web Service VM. 
+
 ###Housekeeping    
 	Downloads live in ~/software.    
 
-## For AWS instance provided:
+### For AWS instance provided:
 
 2. User provides sysadmin with public key and keeps private key and passphrase.
 1. Sysadmin provides IP of instance. 
