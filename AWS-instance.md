@@ -4,8 +4,8 @@
 Provides some notes on installing, accessing and using the NODC Amazon Web Service VM. 
 
 Please pay attention to this next point. At some places below is mentioned to clone a repository from github.com/duncombe:
-- READ AND UNDERSTAND CAREFULLY ALL SOFTWARE BEFORE YOU INSTALL AND RUN IT.    
-  What works for me MAY NOT work for you. I use a lot of custom scripts, functions and aliases that suit my programming style and workflow. These may not work for you and may break the setup you are trying to create. Hints from the name about what a software does may not be 100% accurate. Some functions and scripts may have unexpected side effects. 
+- **READ AND UNDERSTAND CAREFULLY ALL SOFTWARE BEFORE YOU INSTALL AND RUN IT.**    
+  What works for me MAY NOT work for you. I use a lot of custom scripts, functions and aliases that suit my programming style and workflow. These may not work for you and may break the setup you are trying to create. Hints from the name about what a software does may not be 100% accurate. Some functions and scripts may have unexpected side effects. Some packages may require additional installs to run correctly that I do not mention. *Caveat utilitor*.
 
 ###Housekeeping    
 	Downloads live in ~/software.    
