@@ -1,7 +1,7 @@
 
 # Installation of a system on personal VirtualBox instance
 
-Should investigate `vagrant` for controlling VirtualBox.
+Should investigate `vagrant` for controlling VirtualBox. Hints about `vagrant` can be found in the [unidata python workshop](https://github.com/duncombe/unidata-python-workshop/blob/master/VAGRANT_README.md) material (original [here](https://github.com/Unidata/unidata-python-workshop/blob/master/VAGRANT_README.md)).
 
 ## Installation Steps
 
