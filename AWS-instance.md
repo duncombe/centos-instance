@@ -9,6 +9,10 @@ Please pay attention to this next point. At some places below is mentioned to cl
 
 ###Housekeeping    
 	Downloads live in ~/software.    
+	
+### Requirements for access from MSWindows   
+* [`putty`](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html): a full installation including `puttygen` is required. `pageant` is recommended for ease of logins.
+* [`Xming`](http://www.straightrunning.com/XmingNotes/): required for running `ipython notebook` and for using `hugo` (or any other website-builder) in server mode.  
 
 ### For AWS instance provided: 
 
