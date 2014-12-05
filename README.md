@@ -1,5 +1,5 @@
 
-# Using CentOS cloud VMs for Python software development
+# Using cloud CentOS  VMs for Python software development
 
 ## AWS Cloud 
 
