@@ -75,30 +75,30 @@ so clearly something was done to get the correct response. A test should be done
 
 ###Local IPython
 
-    After working a while on a notebook, I began to have trouble with
+After working a while on a notebook, I began to have trouble with
 `matplotlib` not loading properly, and being unable to find all required
 modules, resulting in plots not displaying. 
 
-    The resolution was to re-install anaconda and re-create the  environments. 
+The resolution was to re-install anaconda and re-create the  environments. 
 
-    Recommendation: 
-    - keep track of the packages installed, by doing   
+Recommendation: 
+- keep track of the packages installed, by doing   
 ```
 	conda list -e -n [env-name] 
 ```
 
-    and piping the output into a `requirements.txt` file. This will allow you
+and piping the output into a `requirements.txt` file. This will allow you
 to quickly get the environment set up again after you have nuked and
 re-installed Anaconda.
 
-    Tracking down the cause of the breakdown, it may be
+Tracking down the cause of the breakdown, it may be
 that when I needed another package to be imported and it was not available in
 the base Anaconda install, I did `conda install` in the working environment,
 instead of in the default anaconda environment. It may be that then the working
 environment and default environment got out of sync and 
 package dependencies were broken. 
 
-    Try removing the environment entirely (`conda remove -n [enviname] --all`) and then recreating it (`conda create -n [envname] -f requirements.txt`). 
+Try removing the environment entirely (`conda remove -n [enviname] --all`) and then recreating it (`conda create -n [envname] -f requirements.txt`). 
 
 ##Trouble-shooting
 
