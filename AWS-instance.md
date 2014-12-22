@@ -52,13 +52,15 @@ More hints and tips are available in the document on [running a personal VM on O
 5. Get Hugo (for sos-guidelines documentation).     
 		- download from github     
 		`wget https://github.com/spf13/hugo/releases/download/v0.12/hugo_0.12_linux_amd64.tar.gz`
-6. `git clone compliance-checker`  
-7. Set up an environment. The IOOS site recommends    
-	i. `git clone virtualenv-burrito`   
-	ii.  but compliance-checker does not run. What now?    
-	iii.  Well, NOW we use anaconda and follow some instructions in  the Unidata python workshop examples. Also have a 		look at Rich Signell's
-	[tiddly spot blog](http://rsignell.tiddlyspot.com/#[[Creating%20a%20custom%20Conda%20environment%20on%20Wakari%20Enterprise]])
-	for hints.     
-	iv. Look in [duncombe's glider-data branch](https://github.com/duncombe/system-test/tree/glider-data/Theme_4_Glider_Data_Visualization/Glider_Data) for create-env script that makes an environment for running ipython notebook. 
-13. Further exciting python information is in this repository at [python_setup.md](python_setup.md).   
+7. Set up an environment for anaconda by following 
+instructions in  the Unidata python workshop examples. Also have a 		look at Rich Signell's
+[tiddly spot blog](http://rsignell.tiddlyspot.com/#[[Creating%20a%20custom%20Conda%20environment%20on%20Wakari%20Enterprise]]) for hints. Look in [duncombe's glider-data branch](https://github.com/duncombe/system-test/tree/glider-data/Theme_4_Glider_Data_Visualization/Glider_Data) for create-env script that makes an environment for running ipython notebook. 
+Activate the environment with `source activate <envname>`
+
+6. To run compliance-checker in Anaconda 
+	- `git clone compliance-checker`  
+	- Follow the instructions for installation in the compliance-checker `README.md`.
+
+
+13. More Python setup information is in this repository at [python_setup.md](python_setup.md).   
 
