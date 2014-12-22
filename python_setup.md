@@ -47,6 +47,7 @@ so clearly something was done to get the correct response. A test should be done
 
 ##More about python and IPython 
 
+###Wakari
 1. Constructed from an email exchange with Rich Signell   
     2.  Rich Signell made us an account for Wakari Enterprise on a machine and pointed us to information for creating the custom environment needed for running system test or other IOOS stuff at [http://goo.gl/vsZn7x](http://goo.gl/vsZn7x).
     2.  I found that the instructions as written did not let me complete the install step at `conda install iris, pyoos netcdf4`, complaining about permissions on the `/opt/wakari/anaconda` directory. 
@@ -71,8 +72,51 @@ so clearly something was done to get the correct response. A test should be done
     > The way to install wakari to an environment is running:    
     > `conda install -c wakari ipython-we=2.0.0.1`    
     > 
-   
+
+###Local IPython
+
+After working a while on a notebook, I began to have trouble with
+`matplotlib` not loading properly, and being unable to find all required
+modules, resulting in plots not displaying. 
+
+The resolution was to re-install anaconda and re-create the  environments. 
+
+Recommendation: 
+- keep track of the packages installed, by doing   
+```
+	conda list -e -n [env-name] 
+```
+
+and piping the output into a `requirements.txt` file. This will allow you
+to quickly get the environment set up again after you have nuked and
+re-installed Anaconda.
+
+Tracking down the cause of the breakdown, it may be
+that when I needed another package to be imported and it was not available in
+the base Anaconda install, I did `conda install` in the working environment,
+instead of in the default anaconda environment. It may be that then the working
+environment and default environment got out of sync and 
+package dependencies were broken. 
+
+Try removing the environment entirely (`conda remove -n [enviname] --all`) and then recreating it (`conda create -n [envname] -f requirements.txt`). 
+
+##Trouble-shooting
+
+Have you run into an unexpected difficulty for no apparent reason? Routes for resolution include:
+
+1. Ask a question of google.    
+    I have found that typing the question I have, e.g., "How do I find process ID of running ipython notebook?", 
+produces better and quicker results than trying to guess at possible terms.
+Often asking Google the question turns up the exact question with the answer on
+Stack Exchange or the Ubuntu Forums.
+2. When you get tired of flailing around on Google, post a question to 
+one of the Stack Exchange forums
+([Stackoverflow](http://stackoverflow.com/questions/tagged/python) seems to get most of the 
+python questions) and wait for an answer.
+3. When you get an answer add the incident and resolution here, or in the section above: it may help someone.
+
+
+
 
 <!-- vim: se nowrap tw=0 : -->
-
 
