@@ -34,8 +34,7 @@ For installation on VirtualBox instance:
 	- `yum install wget`  
 	- `yum install man`  
 	- `yum install git`  
-	   We want git >1.7.11; CentOS only installs 1.7.1 (or something). So [try this                     page](http://tecadmin.net/install-git-1-9-on-centos-rhel/). 
-Also look at the last post [in this thread](http://serverfault.com/questions/448814/yum-doesnt-install-latest-version-of-git-on-centos6)
+	   We want git >1.7.11; CentOS only installs 1.7.1 (or something). SoLook at the last post [in this thread](http://serverfault.com/questions/448814/yum-doesnt-install-latest-version-of-git-on-centos6)
        ```
 CentOS supports a "parallel" universe of newer compilers and tools, that doesn't clobber the older versions. You want
 
@@ -48,7 +47,24 @@ which will modify your path. You'll have the old version of git in /usr/bin/git,
 You also get newer g++ (4.8), etc.
 
       ```
-        
+  
+     OR [try this                     page](http://tecadmin.net/install-git-1-9-on-centos-rhel/)
+which gives the following:
+
+      ```
+# yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel gcc perl-ExtUtils-MakeMaker
+# cd /usr/src
+# wget https://www.kernel.org/pub/software/scm/git/git-1.9.4.tar.gz
+# tar xzf git-1.9.4.tar.gz
+
+# cd git-1.9.4
+# make prefix=/usr/local/git all
+# make prefix=/usr/local/git install
+# echo "export PATH=$PATH:/usr/local/git/bin" >> /etc/bashrc
+# source /etc/bashrc
+
+      ```
+      
 	- `yum install vim`  
 	- `yum install ntp`   
    		`service ntpd start`  
