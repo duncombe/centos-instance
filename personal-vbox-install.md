@@ -34,7 +34,7 @@ For installation on VirtualBox instance:
 	- `yum install wget`  
 	- `yum install man`  
 	- `yum install git`  
-	   We want git >1.7.11; CentOS only installs 1.7.1 (or something). SoLook at the last post [in this thread](http://serverfault.com/questions/448814/yum-doesnt-install-latest-version-of-git-on-centos6)
+	   We want git >1.7.11; CentOS only installs 1.7.1 (or something).  Look at the last post [in this thread](http://serverfault.com/questions/448814/yum-doesnt-install-latest-version-of-git-on-centos6)
        ```
 CentOS supports a "parallel" universe of newer compilers and tools, that doesn't clobber the older versions. You want
 
